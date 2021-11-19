@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
 import { Link } from 'react-router-dom'
 import {  HOME_PATH } from '../constants/routes'
 import user from '../img/user.png'
 
 import styles from './Home.module.css'
-import './group.css'
+
 
 
 export const Home=() =>{
