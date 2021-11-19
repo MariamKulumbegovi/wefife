@@ -1,17 +1,26 @@
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
 import { Link } from 'react-router-dom'
-import { GROUPS_PATH } from '../constants/routes'
+import {  HOME_PATH } from '../constants/routes'
 import user from '../img/user.png'
+
 import styles from './Home.module.css'
+import './group.css'
+
 
 export const Home=() =>{
 
-    
-
+   
     return (
-        <div className="container">
+        <div className={`container ${styles[`mt50`]}`}>
         <div className={styles.properties}>
             <div className={styles.content}>
+           
+
             <div className={styles.blockwrapper}>
+           
+                
+    
                 <div className={styles.messagesblock}>
                  
                <div className={` ${styles[`adjust`]}`}>
@@ -61,12 +70,13 @@ export const Home=() =>{
                 <div>
                     <div>
                         <input placeholder="Group name" className={styles.groupname}/>
+                      
                     </div>
                     <div>
                         <input placeholder=" Description" className={styles.groupdescription}/>
                     </div>
                     <div className={styles.createbtnwrapper}>
-                        <button className={styles.createbtn}  ><Link className={styles.btnlink} to={GROUPS_PATH}>Create</Link></button>
+                        <button className={styles.createbtn}  ><Link className={styles.btnlink} to={HOME_PATH}>Create</Link></button>
                     </div>
                 </div>
                 <div className={styles.wefife}>WEFIFE</div>
