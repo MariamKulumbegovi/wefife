@@ -137,3 +137,13 @@
         width: 100%;
     }
   }
+.labell {
+    background-color: rgb(27 27 158);
+    margin-top: 4px;
+}
+.imginput {
+    display: none;
+}
+.inputwrapper {
+    display: flex;
+}

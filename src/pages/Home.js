@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import {  HOME_PATH } from '../constants/routes'
 import user from '../img/user.png'
-
+import {Header } from './Header'
 import styles from './Home.module.css'
 
 
@@ -11,7 +11,11 @@ export const Home=() =>{
 
    
     return (
+        <div>
+             <Header/>
+      
         <div className={`container ${styles[`mt50`]}`}>
+        
         <div className={styles.properties}>
             <div className={styles.content}>
            
@@ -59,6 +63,12 @@ export const Home=() =>{
                </div>
                <div className={styles.inputwrapper}>
                  <input placeholder="Type your message here..." className={styles.input}/>
+                 <label className={styles.labell} >
+                 📷
+                 <input className={styles.imginput} type="file" id="img" name="img" accept="image/*"/>
+                </label>
+                
+           
              </div>
                 
                 </div>  
@@ -82,6 +92,7 @@ export const Home=() =>{
                
                 </div>
             </div>
+        </div>
         </div>
         </div>
     )
